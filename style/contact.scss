@@ -1,0 +1,84 @@
+@import "./theme.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontfamily;
+}
+
+// *********************NAV**************************
+
+.container {
+  @include myBg();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+header {
+  height: 40vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 11px;
+  nav {
+    li {
+      @include myNav();
+    }
+    a {
+      @include myAtag();
+    }
+  }
+}
+.current__contact {
+  color: $orange;
+}
+
+section {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  flex-direction: column;
+  opacity: 0.8;
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .contact__list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .text-orange {
+    color: $orange;
+  }
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .icons {
+    @include myIcon;
+    a {
+      padding: 1rem;
+    }
+    li {
+      padding-left: 0;
+    }
+  }
+  .copyright {
+    @include myCopyright;
+    margin: 2rem 0 3rem 0;
+  }
+}
