@@ -1,5 +1,4 @@
-# Sass-Website-1
-
+# Sass-Portfolio
 ## Description
 
 - Portfolio website is designed using HTML and SASS (SCSS) codes for style. 
